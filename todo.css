@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff8c00;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+form {
+  display: flex;
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+form input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 2px solid #ff8c00;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+}
+
+form button {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #ff8c00;
+  color: #1f1f1f;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 1rem;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #d97706;
+}
+
+.todo-container {
+  width: 80%;
+  max-width: 600px;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.todo li {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.complete-btn, 
+.trash-btn {
+  background-color: #ff8c00;
+  color: #1f1f1f;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s;
+  font-size: 1.4rem;
+}
+
+.complete-btn:hover, 
+.trash-btn:hover {
+  background-color: #d97706;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #a9a9a9;
+  opacity: 0.7;
+}
+
+.todo-item.completed .complete-btn {
+  background-color: #4caf50;
+}
+
+.select {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+select {
+  padding: 1rem;
+  border: 2px solid #ff8c00;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 50%;
+}
